@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+      .nme {
+        padding: 1em;
+        border: none;
+        border-radius: 6px;
+        background-color: rgb(226, 229, 231);
+      }
+      input[type="file"] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--First block-->
+    <div class="containter-fluid">
+      <div class="row">
+        <div
+          class="col-sm-12 "
+          style="background-image: url('/static/bg4.jpg'); background-size:cover;background-repeat:no-repeat;"
+        >
+          <div
+            class="row for content-center "
+            style="margin-top: 100px; margin-left: 190px;"
+          >
+            <div class="col-4">
+              <img
+                src="/static/visit_nepal_logo.png"
+                alt=""
+                style="width:85%;"
+              />
+            </div>
+            <div class="col-4">
+              <h1
+                class="display-4 font-weight-bold  text-center"
+                style="color:rgb(255, 255, 255);"
+              >
+                <span style="">Let's make our life adventurous</span><br />
+                <span style="">Visit Nepal</span><br />
+                <span style="color:orange;">2020</span>
+                <span style="font-size: 20px;color:orange;"
+                  ><p>Life time experience</p></span
+                >
+              </h1>
+            </div>
+            <div
+              class=" container border rounded-lg"
+              style=" background:rgba(255, 255, 255, 0.3);border:none;margin:100px 0 100px 0;"
+            >
+              <div class="container">
+                <div style="margin:1em 50% 0 40%; ">
+                  <h1
+                    class="text-center"
+                    style="background-color: rgb(255, 255, 255); margin:0;width:5em; border-radius:6px 6px 0 0;"
+                  >
+                    Search
+                  </h1>
+                </div>
+                <div
+                  class="row "
+                  style="background-color: rgb(255, 255, 255);margin-bottom:1em;"
+                >
+                  <div class="col-12">
+                    <!--form-->
+                    <!--Here all the required coding is done-->
+                    <form
+                      action="/"
+                      method="POST"
+                      enctype="multipart/form-data"
+                    >
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Name"
+                        class="nme m-4"
+                        style="width:40%;"
+                      />
+                      <input
+                        type="file"
+                        name="file"
+                        style="display:inline-block;padding:1em;font-size:20px;"
+                        required
+                      />
+                      <input type="submit" name="Submit" value="Submit" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Second block-->
+    <!--Destinations-->
+    <div class="container- mt-4 mb-4">
+      <h1 class="text-center">Top Destinations</h1>
+      <div class="row justify-content-center ">
+        <div class="col-3 ">
+          <img
+            src="/static/swambhunath.jpeg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Swayambhunath</small></h1>
+        </div>
+        <div class="col-3 ">
+          <img
+            src="/static/mustang.jpg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Mustang</small></h1>
+        </div>
+        <div class="col-3 ">
+          <img
+            src="/static/pokhara.jpg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Pokhara</small></h1>
+        </div>
+      </div>
+      <div class="row justify-content-center ">
+        <div class="col-3 ">
+          <img
+            src="/static/pashupatinath.jpg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Pashupatinath</small></h1>
+        </div>
+        <div class="col-3 ">
+          <img
+            src="/static/boudha.jpg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Boudha Stupa</small></h1>
+        </div>
+        <div class="col-3 ">
+          <img
+            src="/static/lumbini.jpg"
+            alt=""
+            class="img-fluid border rounded-lg"
+          />
+          <h1 class="text-left"><small>Lumbini</small></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sites Info</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Caladea&display=swap');
+      body {font-family: 'Caladea', serif;
+      }
+      .Description {
+        float: right;
+        width: 60%;
+        padding-left: 7px;
+        text-align: justify;
+      }
+      .image {
+        float: left;
+      }
+    </style>
+  </head>
+  <body
+    style="background-image: url('/static/b.png'); background-size:cover;background-repeat:no-repeat;"
+  >
+    <div class="Container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row_for_center">
+            <div class="col-4">
+              <h1 class="name">{{sites['Name']}}</h1>
+              <div class="image">
+                <img
+                  class="image"
+                  src="{{sites['URL']}}"
+                  width="600px"
+                  height="400px"
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="Description">
+                <h2>Description</h2>
+                <li>Coordinates: {{sites['Coordinates']}}</li>
+                <li>Visiters per year = {{sites['visiters']}}</li>
+                <p align="center justify">
+                <li>{{sites['discription']}}</li>
+                <h2>History:</h2>
+                <li>{{sites['History']}}</li>
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
